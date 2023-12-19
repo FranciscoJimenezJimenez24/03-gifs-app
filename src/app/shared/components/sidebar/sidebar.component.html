@@ -2,8 +2,8 @@
   <h3 class="text-light">GifsApp</h3>
   <hr>
   <div class="list-group item-reset">
-    <button class="list-group-item list-group-item-action">
-      Call of Duty
+    <button class="list-group-item list-group-item-action" *ngFor="let etiqueta of historialEtiquetasSideBar()">
+      {{etiqueta}}
     </button>
   </div>
 </div>

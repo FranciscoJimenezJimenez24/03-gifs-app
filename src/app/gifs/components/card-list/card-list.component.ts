@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Gif } from './../../interfaces/gifs.interfaces';
+import { Component, ElementRef, ViewChild, Input } from '@angular/core';
 
 @Component({
   selector: 'gifs-card-list',
@@ -6,6 +7,9 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./card-list.component.css']
 })
 export class CardListComponent {
+  @Input()
+  public listaGifs:Gif[]=[]
+
 
 
 }
